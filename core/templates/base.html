@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    {% load static %}
+    <link
+      href="{% static 'css/BS5/bootstrap.min.css' %}"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Flipster CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'css/FLIPSTER/jquery.flipster.min.css' %}"
+    />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    {% load static %}
+    <script
+      src="{% static 'js/BS5/bootstrap.bundle.min.js' %}"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Flipster JS -->
+    <script src="{% static 'js/FLIPSTER/jquery.flipster.min.js' %}"></script>
+
+    <title>{% block title %} {% endblock %}</title>
+
+    <!-- Custom styles for this template -->
+    {% block css %} {% endblock %}
+  </head>
+  <body>
+    {% block content %} {% endblock %}
+
+    <!-- Custom script for this template -->
+    {% block js %} {% endblock %}
+
+    <!-- Bootstrap Bundle with Popper -->
+    {% load static %}
+    <script
+      src="{% static 'js/BS5/bootstrap.bundle.min.js' %}"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

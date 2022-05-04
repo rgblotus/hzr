@@ -1,0 +1,285 @@
+{% extends "base.html" %} {% load i18n %} {% load static %}
+<!-- Title -->
+{% block title %}About{% endblock %}
+
+<!-- CSS -->
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/cnp.css' %}" />
+{% endblock %}
+
+<!-- Content -->
+{% block content %}
+<div class="container-fluid">
+  <!-- Side Bar -->
+  <div class="offcanvas offcanvas-start" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">C&P</h1>
+      <button type="button" class="btn" data-bs-dismiss="offcanvas">
+        <img
+          src="{% static 'icons/BS5/list.svg' %}"
+          alt=""
+          width="24"
+          height="24"
+        />
+      </button>
+    </div>
+  </div>
+  <!-- Side Bar Nav -->
+  <nav class="navbar navbar-expand navbar-light bg-transparent">
+    <div class="container-fluid">
+      <div class="col">
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#demo"
+        >
+          <img
+            src="{% static 'icons/BS5/list.svg' %}"
+            alt=""
+            width="24"
+            height="24"
+          />
+        </button>
+        <a class="navbar-brand" href="#"
+          ><img
+            src="{% static 'icons/BS5/House.svg' %}"
+            alt=""
+            width="24"
+            height="24"
+          />
+          Hazira
+        </a>
+      </div>
+    </div>
+    <form class="d-flex">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </nav>
+  <!-- Cover Flow -->
+  <div class="container-fluid">
+    <div id="carousel">
+      <ul class="flip-items">
+        <li>
+          <img
+            src="{% static 'img/solid.png' %}"
+            style="background-color: rgb(0, 128, 128)"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>
+                Some representative placeholder content for the first slide of
+                the carousel.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="{% static 'img/solid.png' %}"
+            style="background-color: rgb(0, 128, 128)"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>
+                Some representative placeholder content for the first slide of
+                the carousel.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="{% static 'img/solid.png' %}"
+            style="background-color: rgb(0, 128, 128)"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Example headline.</h1>
+              <p>
+                Some representative placeholder content for the first slide of
+                the carousel.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="{% static 'img/solid.png' %}"
+            style="background-color: rgb(0, 128, 128)"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>
+                Some representative placeholder content for the first slide of
+                the carousel.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="{% static 'img/solid.png' %}"
+            style="background-color: rgb(0, 128, 128)"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+          <div class="container">
+            <div class="carousel-caption text">
+              <h1>Example headline.</h1>
+              <p>
+                Some representative placeholder content for the first slide of
+                the carousel.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img
+            src="{% static 'img/solid.png' %}"
+            style="background-color: rgb(0, 128, 128)"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Example headline.</h1>
+              <p>
+                Some representative placeholder content for the first slide of
+                the carousel.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Card -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 400px">
+          <img
+            class="card-img-top"
+            src="{% static 'img/solid.png' %}"
+            style="background-color: rgb(0, 128, 128)"
+            alt="Card image"
+            style="width: 100%"
+          />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">
+              Some example text some example text. John Doe is an architect and
+              engineer
+            </p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 400px">
+          <img
+            class="card-img-top"
+            src="{% static 'img/solid.png' %}"
+            style="background-color: rgb(0, 128, 128)"
+            alt="Card image"
+            style="width: 100%"
+          />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">
+              Some example text some example text. John Doe is an architect and
+              engineer
+            </p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 400px">
+          <img
+            class="card-img-top"
+            src="{% static 'img/solid.png' %}"
+            style="background-color: rgb(0, 128, 128)"
+            alt="Card image"
+            style="width: 100%"
+          />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">
+              Some example text some example text. John Doe is an architect and
+              engineer
+            </p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 400px">
+          <img
+            class="card-img-top"
+            src="{% static 'img/solid.png' %}"
+            style="background-color: rgb(0, 128, 128)"
+            alt="Card image"
+            style="width: 100%"
+          />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">
+              Some example text some example text. John Doe is an architect and
+              engineer
+            </p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+<!-- JS -->
+{% block js %}
+<script src="{% static 'js/cnp.js' %}" />
+{% endblock %}
